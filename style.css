@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+/* header*/
+header{
+    padding: 30px;
+    background-color: #0f0c0ccd;
+}
+header nav img{
+  height: 60px;
+
+}
+header nav ul li{
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+header nav ul{
+    float: right;
+}
+header nav ul li button{
+    border: none;
+    padding: 15px;
+    background-color: #1c1c1c;
+    max-width: 150px;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 8px solid #2d2d2d;
+    transition: 1s;
+    cursor: pointer;
+
+}
+header nav ul li button:hover, header ul li:hover{
+    border: 0px solid #2d2d2d;
+    color: #ee684a;
+
+}
+/*hero section*/
+.hero{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #101010;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+.hero-text{
+    flex: 1;/* flex:1 is width all childs is same width*/
+    padding: 30px;
+    
+}
+.hero-image{
+flex: 1;
+
+}
+.hero-text h1{
+    color: #ee684a;
+    font-size: 35px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.hero-text p{
+      color: #585656;
+      font-size: 20px;
+}
+.hero-text button{
+    bottom: none;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #ee684a;
+    border-bottom: 10px solid #ac4730 ;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+   
+    
+    
+
+}
+.hero-text button:hover{
+    border-bottom: 5px solid #813f2f;
+    transition: 1s;
+
+}

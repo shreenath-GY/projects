@@ -1,0 +1,27 @@
+@media (max-width:768px){
+    header nav ul{
+        font: none;
+
+    }
+    header nav ul li{
+        display: block;
+    }
+    header img{
+        width: 40px !important;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero-text{
+        flex-direction: column;
+        padding: 20px;
+
+    }
+   
+   
+}
+@media(max-width:400px){
+    .hero text button{
+        width: 100%;
+    }
+}
