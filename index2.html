@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 10px 50px;
+            position: sticky;
+            top: 0;
+        }
+        header nav ul{
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+        header button{
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: blueviolet;
+            color: #fff;
+            font-size: 20px;
+        }
+        header nav ul li a{
+                color: #0e0d0d;
+                font-size: 20px;
+                text-decoration: none;
+        }
+        .hero{
+            background:linear-gradient(90deg, #9011f246, #2933f0), url(https://pennwatch.org/wp-content/uploads/2020/10/college-students-studying-together-in-a-library_Ht90h5Ari-scaled.jpg) no-repeat center;
+            min-height: 80vh;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-text{
+            text-align: center;
+            color: #fff;
+        }
+        .hero-text h1{
+            font-size: 60px;
+        }
+        .white-btn{
+            border: none;
+            padding: 15px;
+            font-size: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .outline-btn{
+            border: none;
+            background-color: transparent;
+            padding: 15px;
+            font-size: 20px;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btns{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 30px;
+        }
+        .white-btn:hover, .outline-btn:hover{
+            background-color: #2933f0;
+            color: #fff;
+            transition: 1s;
+            transform:  translateX(10px) translateY(-10px);
+            border: none;
+        }
+        .hero-text p{
+            font-size: 20px;
+        }
+        .about{
+            display: flex;
+            padding: 10% 5%;
+        }
+        .about-left{
+            flex: 1;
+        }
+        .about-right{
+           flex: 1;
+        }
+        .about-left h1{
+            font-size: 50px;
+            color: #222121;
+        }
+        .about-right p{
+            font-size: 20px;
+            color: #707070;
+        }
+        .about-right button{
+            border: none;
+            margin-top: 40px;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 100px;
+            width: 60px;
+            height: 60px;
+            background-color: #4b53e8;
+            text-wrap: nowrap;
+            transition: 1s !important;
+
+        }
+        .about-right button:hover{
+            width: fit-content;
+            transition: 1s;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        @media (max-width:768px){
+            header{
+                flex-direction: column;
+               align-items: start;
+            }
+            header nav ul{
+                flex-direction: column;
+                display: none;
+            }
+            .hero-text h1{
+                font-size: 30px;
+            }
+            .white-btn, .outline-btn{
+                padding: 10px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://rainbowit.net/html/histudy/assets/images/logo/logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Elements</a></li>
+                <li><a href="">Blogs</a></li>
+            </ul>
+        </nav>
+        <button type="button">Create Account</button>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Start Your <br> Career & Pursue <br> Your Passion.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Magni vel nesciunt, alias debitis beatae inventore</p>
+            <div class="btns">
+                <button class="white-btn">View Our program</button>
+                <button class="outline-btn">Contat us</button>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-left">
+            <h1>About the University we are creative preapre you for your career supportive.</h1>
+        </div>
+        <div class="about-right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto laborum amet reiciendis, rem deleniti consectetur harum omnis ad recusandae cumque mollitia nemo debitis ipsum autem necessitatibus ratione? Eum, modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officia quia voluptate praesentium similique ipsum quibusdam culpa sunt perferendis sequi.</p>
+            <button>University Overview</button>
+        </div>
+    </section>
+    
+</body>
+</html>
