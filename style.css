@@ -20,6 +20,11 @@ header nav ul li{
     color: #fff;
     cursor: pointer;
 }
+header nav ul li a{
+    text-decoration: none;
+    color: #ee684a;
+}
+
 header nav ul{
     float: right;
 }
@@ -35,9 +40,9 @@ header nav ul li button{
     cursor: pointer;
 
 }
-header nav ul li button:hover, header ul li:hover{
-    border: 0px solid #2d2d2d;
-    color: #ee684a;
+header nav ul li button:hover, header ul li a:hover{
+    border: 0px solid  #ee684a;
+    color: #fd0a0a;
 
 }
 /*hero section*/
