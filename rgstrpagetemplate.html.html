@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Register page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background:linear-gradient(45deg,blue,rgb(244, 113, 135),red,yellow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            margin-bottom: 8px;
+            margin-top: 2px;
+            font-size: 14px;
+            padding: 8px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            border: 1px solid #c9c9c9;
+        }
+        button {
+            border: none;
+            padding: 15px;
+            width: 100%;
+            background-color: rgba(16, 140, 222, 0.933);
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: rgb(6, 95, 228);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+        p{
+            text-align: center;
+            color: rgb(87, 85, 85);
+        }
+        b{
+            /* margin-left: 30px; */
+            background-color: rgba(6, 6, 239, 0.669);
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            width: 100%;
+           }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        h4{
+            text-align: center;
+        }
+        pre{
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form autocomplete="off" class="card">
+        <center><h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Instagram</h1></center>
+        <!-- <center><pre>   sign up to see photos and videos</pre> 
+        <pre>      from your friends.</pre>-->
+       <center> <b>Log in with Facebook</b> </center><br> 
+        <center>OR</center>
+        <br>
+        <input type="email" placeholder="Email" id="uemail" required><br>
+        <input type="text" placeholder="Full name" name="" id="fname" required><br>
+        <input type="text" placeholder="Username" name="" id="uname" required><br>
+        <input type="password" placeholder="Password" id="pass" required><br>
+        <p>People who use our service may have uploaded<br>
+            your contact information to Instagram.<a href="./Post-asignt.html">Learn</a><br>
+                      More </p>
+                      <p>By signing up your agree to our <a href="">Terms,Data <br>Policy</a> and <a href="">Cookies Policy.</a></p>
+            
+        <button type="submit">Sign up</button>
+        <hr>
+        <h4>Have an account? <a style="color: rgb(10, 160, 224);" href="./loginpageasgnt.html "> Log in </a></h4>
+    </form>
+</body>
+
+</html>
